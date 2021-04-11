@@ -1,19 +1,20 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 11, 32, 0),
+      rgb(0, 21, 46)
+    ),
+    url(/images/tech-4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: rgb(0, 21, 46);
+  width: 100%;
+  min-height: 90vh;
+  color: #ffffff;
 }
 
 .footer {
