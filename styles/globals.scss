@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.navItemBox:hover .navItem {
+  display: block !important;
+}
+.navItem {
+  display: none;
+}

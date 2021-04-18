@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 import { Flex, Center, Text, Circle, HStack, Spacer } from "@chakra-ui/layout";
-
+import { FiChevronDown } from "react-icons/fi";
 import { GiCrestedHelmet } from "react-icons/gi";
 import { Button } from "@chakra-ui/button";
 import NavDrawer from "./NavDrawer";
+import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
+import NavMenuItems from "./NavMenuItems";
 
 export default function NavBar() {
   return (
@@ -47,34 +49,11 @@ export default function NavBar() {
           </Link>
         </Center>
         <Spacer />
-        <Center _hover={{ color: "teal.400" }} transition="ease 0.3s">
-          <Link href="/">
-            <a className="logo" _hover={{ textDecoration: "none" }}>
-              Services
-            </a>
-          </Link>
-        </Center>
-        <Spacer />
-        <Center _hover={{ color: "teal.400" }} transition="ease 0.3s">
-          <Link href="/">
-            <a className="logo" _hover={{ textDecoration: "none" }}>
-              Pages
-            </a>
-          </Link>
-        </Center>
-        <Spacer />
+        <NavMenuItems />
         <Center _hover={{ color: "teal.400" }} transition="ease 0.3s">
           <Link href="/">
             <a className="logo" _hover={{ textDecoration: "none" }}>
               Blog
-            </a>
-          </Link>
-        </Center>
-        <Spacer />
-        <Center _hover={{ color: "teal.400" }} transition="ease 0.3s">
-          <Link href="/">
-            <a className="logo" _hover={{ textDecoration: "none" }}>
-              Contact
             </a>
           </Link>
         </Center>
@@ -86,6 +65,7 @@ export default function NavBar() {
           size="lg"
           _hover={{ bg: "teal.500", transform: "translateY(-2px)" }}
           display={{ base: "none", lg: "inherit" }}
+          _focus={{ outline: "transparent" }}
         >
           Contact Us
         </Button>

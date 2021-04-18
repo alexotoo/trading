@@ -7,8 +7,13 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Button,
+  HStack,
+  Text,
+  Spacer,
+  Center,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
+import { GiCrestedHelmet } from "react-icons/gi";
 import { useRef } from "react";
 
 export default function NavDrawer() {
@@ -32,18 +37,28 @@ export default function NavDrawer() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerContent
+            bgGradient="linear(to-t, rgb(0, 21, 46), pink.600)"
+            color="white"
+          >
+            <DrawerHeader color="teal.400">
+              <HStack>
+                <GiCrestedHelmet fontSize="3.5rem" />
+                <Text ml="2" color="white" fontSize="2rem">
+                  {" "}
+                  Cryptotoo
+                </Text>
+                <DrawerCloseButton
+                  top="2rem"
+                  background="white"
+                  _focus={{ outline: "transparent" }}
+                />
+              </HStack>
+            </DrawerHeader>
 
             <DrawerBody></DrawerBody>
 
-            <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="blue">Save</Button>
-            </DrawerFooter>
+            <DrawerFooter>social media icons here</DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
