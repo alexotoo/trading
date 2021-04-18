@@ -34,6 +34,7 @@ export default function NavMenuItems({ items, icon }) {
           _hover={{ background: "none", color: "teal.400" }}
           fontWeight="normal"
           className="navItemBox"
+          paddingX="2"
         >
           <Link href="/">{title}</Link>
         </MenuButton>
