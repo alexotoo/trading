@@ -1,10 +1,8 @@
-import { Button } from "@chakra-ui/button";
-import { MenuItem, Menu, MenuButton, MenuList } from "@chakra-ui/menu";
 import Link from "next/link";
 import { FiChevronDown } from "react-icons/fi";
 import { useState } from "react";
-import { HStack } from "@chakra-ui/layout";
-export default function NavMenuItems({ items, icon }) {
+
+export default function NavMenuItems({ items }) {
   const menuObject = [
     {
       title: "Services",

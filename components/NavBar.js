@@ -1,11 +1,8 @@
 import Link from "next/link";
-
-import { Flex, Center, Text, Circle, HStack, Spacer } from "@chakra-ui/layout";
-import { FiChevronDown } from "react-icons/fi";
+import { Flex, Center, Text, HStack, Spacer } from "@chakra-ui/layout";
 import { GiCrestedHelmet } from "react-icons/gi";
 import { Button } from "@chakra-ui/button";
 import NavDrawer from "./NavDrawer";
-import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
 import NavMenuItems from "./NavMenuItems";
 
 export default function NavBar() {
