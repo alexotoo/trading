@@ -1,5 +1,5 @@
-import { Text, Flex, Container } from "@chakra-ui/layout";
-import { Image } from "@chakra-ui/react";
+import { Text, Flex, Container, Box } from "@chakra-ui/layout";
+import { Button, Image } from "@chakra-ui/react";
 import styles from "./herosection.module.scss";
 import Typewriter from "typewriter-effect";
 
@@ -11,15 +11,34 @@ export default function HeroSection() {
       color="white"
       w="100%"
       minH="80vh"
+      paddingY="2rem"
     >
-      <Image
-        src="/images/tech-1.png"
-        alt=""
-        width={{ lg: "50%" }}
-        opacity="0.6"
-      />
+      <Box className={styles.imgcont} minW={{ lg: "40%" }}>
+        <Image
+          src="/images/tech-1.png"
+          alt=""
+          opacity="0.6"
+          position="relative"
+          w="100%"
+          h="100%"
+          borderRadius="10px"
+        />
+        <Image
+          className={styles.coverImag}
+          src="/images/croped.png"
+          position="absolute"
+          width="400px"
+        />
+      </Box>
       <Flex direction="column">
-        <Flex fontSize="4xl" paddingX="4">
+        <Flex
+          fontSize={{ base: "4xl", lg: "5xl" }}
+          paddingX="4"
+          letterSpacing="2px"
+          flexWrap="wrap"
+          lineHeight=".8"
+          pt="1rem"
+        >
           <Text>Guaranteed</Text>
           <Text color="teal.300" paddingX="3">
             <Typewriter
@@ -32,12 +51,25 @@ export default function HeroSection() {
             />
           </Text>
         </Flex>
-        <Text fontWeight="normal" paddingX="4" pt="4">
+        <Text fontWeight="normal" paddingX="4" pt="6" color="whiteAlpha.700">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
           error molestias voluptate iste excepturi aut consectetur ab fugiat
           suscipit qui labore voluptates vel enim odio, atque maxime animi
           voluptatem eos!
         </Text>
+        <Button
+          bg="teal.400"
+          size="lg"
+          _hover={{ bg: "teal.500", transform: "translateY(-2px)" }}
+          _focus={{ outline: "transparent" }}
+          width="170px"
+          paddingY="2rem"
+          letterSpacing="wider"
+          mt={{ sm: "8", lg: "40px" }}
+          m="4"
+        >
+          Learn More
+        </Button>
       </Flex>
     </Flex>
   );

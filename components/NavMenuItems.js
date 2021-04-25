@@ -18,10 +18,9 @@ export default function NavMenuItems({ items }) {
 
   const [menuItems] = useState(menuObject);
 
-  console.log(items, menuItems, menuObject);
   return menuItems.map((menu, index) => {
     const { title, subTitle, isIcon } = menu;
-    console.log(title, subTitle, isIcon);
+
     return (
       <div class="dropdown">
         <div className="navbutton">

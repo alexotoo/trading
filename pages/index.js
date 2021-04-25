@@ -3,23 +3,29 @@ import { Spacer } from "@chakra-ui/layout";
 import { Text } from "@chakra-ui/layout";
 import Head from "next/head";
 import HeroSection from "../components/indexpage/HeroSection";
+import OfferSection from "../components/indexpage/OfferSection";
+import TrustedSection from "../components/indexpage/TrustedSection";
+import WelcomeSection from "../components/indexpage/WelcomeSection";
 import NavBar from "../components/NavBar";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Crypto website</title>
       </Head>
-      <header className={styles.header}>
+      <header>
         <NavBar />
         <HeroSection />
       </header>
 
-      <main className={styles.main}></main>
+      <main>
+        <OfferSection />
+        <TrustedSection />
+        <WelcomeSection />
+      </main>
 
-      <footer className={styles.footer}></footer>
+      <footer> footer here</footer>
     </div>
   );
 }
