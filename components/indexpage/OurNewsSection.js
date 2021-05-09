@@ -14,7 +14,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function OurNewsSection() {
   return (
-    <Container id="ourServiceSection" maxW="container.lg" paddingY="4rem">
+    <Container id="ourServiceSection" maxW="container.lg" paddingY="2rem">
       <Text
         fontWeight="normal"
         color="teal.300"
@@ -114,7 +114,7 @@ export default function OurNewsSection() {
             quibusdam beatae i magni{" "}
           </Text>
           <Link
-            pb="6"
+            pb="2"
             display="inline-block"
             color="teal.300"
             textDecoration="none !important"

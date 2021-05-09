@@ -33,33 +33,24 @@ export default function HeroSection() {
       </Box>
 
       <Flex direction="column">
-        <Flex
-          fontSize={{ base: "4xl", lg: "5xl" }}
-          paddingX="4"
-          letterSpacing="2px"
-          flexWrap="wrap"
-          lineHeight=".8"
-          pt="1rem"
+        <Heading
+          paddingX="1rem"
+          fontSize={{ base: "1.25rem", md: "2.25rem" }}
+          letterSpacing="wide"
         >
-          <Heading as="h2" size="xl" letterSpacing="wide">
-            Guaranteed
-            <Badge bg="none" fontSize="inherit" marginX="1" color="teal.300">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Protection",
-                    "Security",
-                    "Satisfaction",
-                    "Interest",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  cursor: "",
-                }}
-              />
-            </Badge>{" "}
-          </Heading>
-        </Flex>
+          Guaranteed
+          <Badge bg="none" fontSize="inherit" marginX="1" color="teal.300">
+            <Typewriter
+              options={{
+                strings: ["Protection", "Security", "Satisfaction", "Interest"],
+                autoStart: true,
+                loop: true,
+                cursor: "",
+              }}
+            />
+          </Badge>{" "}
+        </Heading>
+
         <Text fontWeight="normal" paddingX="4" pt="6" color="whiteAlpha.700">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
           error molestias voluptate iste excepturi aut consectetur ab fugiat

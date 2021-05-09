@@ -23,7 +23,7 @@ export default function OurServicesSection() {
     <Container
       id="ourServiceSection"
       maxW="container.xl"
-      paddingY="6rem"
+      paddingBottom="2rem"
       textAlign="center"
     >
       <Text fontWeight="normal" color="teal.300" fontSize="1.2rem">
