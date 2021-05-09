@@ -87,7 +87,7 @@ export default function Home() {
       scrollTrigger: {
         trigger: animationRef.querySelector("#offerSection"),
         scrub: true,
-        start: "center center",
+        start: "top top",
       },
     });
     tl1.from(animationRef.querySelector(".anim_welcomeS_1"), {
