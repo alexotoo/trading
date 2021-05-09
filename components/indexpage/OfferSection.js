@@ -1,4 +1,4 @@
-import { Flex, Spacer, Box, HStack, Text } from "@chakra-ui/react";
+import { Flex, Box, HStack, Text } from "@chakra-ui/react";
 import styles from "./offersection.module.scss";
 import {
   AiFillLock,
@@ -9,6 +9,7 @@ import {
 export default function OfferSection() {
   return (
     <Flex
+      id="offerSection"
       padding="1rem"
       pt={8}
       justifyContent="space-between"

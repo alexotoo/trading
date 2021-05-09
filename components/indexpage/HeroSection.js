@@ -1,4 +1,4 @@
-import { Text, Flex, Container, Box } from "@chakra-ui/layout";
+import { Text, Flex, Box, Heading, Badge } from "@chakra-ui/layout";
 import { Button, Image } from "@chakra-ui/react";
 import styles from "./herosection.module.scss";
 import Typewriter from "typewriter-effect";
@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect";
 export default function HeroSection() {
   return (
     <Flex
+      id="heroSection"
       direction={{ base: "column", lg: "row" }}
       overflow="hidden"
       color="white"
@@ -30,6 +31,7 @@ export default function HeroSection() {
           width="400px"
         />
       </Box>
+
       <Flex direction="column">
         <Flex
           fontSize={{ base: "4xl", lg: "5xl" }}
@@ -39,17 +41,24 @@ export default function HeroSection() {
           lineHeight=".8"
           pt="1rem"
         >
-          <Text>Guaranteed</Text>
-          <Text color="teal.300" paddingX="3">
-            <Typewriter
-              options={{
-                strings: ["Protection", "Security", "Satisfaction", "Interest"],
-                autoStart: true,
-                loop: true,
-                cursor: "",
-              }}
-            />
-          </Text>
+          <Heading as="h2" size="xl" letterSpacing="wide">
+            Guaranteed
+            <Badge bg="none" fontSize="inherit" marginX="1" color="teal.300">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Protection",
+                    "Security",
+                    "Satisfaction",
+                    "Interest",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  cursor: "",
+                }}
+              />
+            </Badge>{" "}
+          </Heading>
         </Flex>
         <Text fontWeight="normal" paddingX="4" pt="6" color="whiteAlpha.700">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,

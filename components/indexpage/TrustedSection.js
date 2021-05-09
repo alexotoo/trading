@@ -1,21 +1,37 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Center, Grid, HStack, Spacer, Text } from "@chakra-ui/layout";
+import {
+  Badge,
+  Box,
+  Center,
+  Grid,
+  Heading,
+  HStack,
+  Spacer,
+  Text,
+} from "@chakra-ui/layout";
 import styles from "./trustedsection.module.scss";
 export default function TrustedSection() {
   return (
     <Box
+      id="trustedSection"
       padding="1rem"
       mt={{ base: "2rem", md: "4rem" }}
       minH="60vh"
       paddingBottom="4rem"
     >
-      <Text align="center" fontSize="4xl">
+      <Heading as="h2" size="xl" letterSpacing="wide" align="center">
         Trusted by Over{" "}
-        <Text d="inline" color="teal.500">
-          120+{" "}
-        </Text>
+        <Badge
+          bg="none"
+          fontSize="inherit"
+          marginX="1"
+          as="sup"
+          color="teal.300"
+        >
+          120+
+        </Badge>{" "}
         Companies Worldwide
-      </Text>
+      </Heading>
 
       <Grid
         templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}

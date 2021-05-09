@@ -1,7 +1,6 @@
 .imageItem {
-  filter: grayscale(90%);
-  transition: all ease 0.5s;
+  transition: all ease 1s;
 }
 .imageItem:hover {
-  filter: grayscale(0);
+  filter: grayscale(90%);
 }

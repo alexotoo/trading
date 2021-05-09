@@ -22,15 +22,15 @@ export default function NavMenuItems({ items }) {
     const { title, subTitle, isIcon } = menu;
 
     return (
-      <div class="dropdown">
+      <div className="dropdown" key={index}>
         <div className="navbutton">
-          <button class="dropbtn">{title}</button>
+          <button className="dropbtn">{title}</button>
           <FiChevronDown />
         </div>
 
-        <div class="dropdown-content">
-          {subTitle.map((item) => (
-            <Link href="/">
+        <div className="dropdown-content">
+          {subTitle.map((item, index) => (
+            <Link href="/" key={index}>
               <a>{item}</a>
             </Link>
           ))}
