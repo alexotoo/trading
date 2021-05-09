@@ -25,6 +25,7 @@ export default function HeroSection() {
           borderRadius="10px"
         />
         <Image
+          display={{ base: "none", md: "inherit" }}
           className={styles.coverImag}
           src="/images/croped.png"
           position="absolute"
