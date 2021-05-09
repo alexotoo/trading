@@ -17,11 +17,7 @@ export default function OfferSection() {
       color="whiteAlpha.700"
       flexWrap="wrap"
     >
-      <Box
-        className={styles.offerBox}
-        width={{ base: "100%", md: "32%" }}
-        mb="2"
-      >
+      <Box className={styles.offerBox} width={{ base: "100%", md: "32%" }}>
         <HStack pb="1rem">
           <AiFillLock color="teal" fontSize="3rem" />
           <Text color="white" fontSize="1.4rem">
@@ -33,11 +29,7 @@ export default function OfferSection() {
           quibusdam beatae minus ex est, excepturi vero sit eligendi magni{" "}
         </Text>
       </Box>
-      <Box
-        className={styles.offerBox}
-        width={{ base: "100%", md: "32%" }}
-        mb="2"
-      >
+      <Box className={styles.offerBox} width={{ base: "100%", md: "32%" }}>
         <HStack pb="1rem">
           <AiFillSafetyCertificate color="teal" fontSize="3rem" />
           <Text color="white" fontSize="1.4rem">
@@ -49,11 +41,7 @@ export default function OfferSection() {
           quibusdam beatae minus ex est, excepturi vero sit eligendi magni{" "}
         </Text>
       </Box>
-      <Box
-        className={styles.offerBox}
-        width={{ base: "100%", md: "32%" }}
-        mb="2"
-      >
+      <Box className={styles.offerBox} width={{ base: "100%", md: "32%" }}>
         <HStack pb="1rem">
           <AiOutlineCloudServer color="teal" fontSize="3rem" />
           <Text color="white" fontSize="1.4rem">

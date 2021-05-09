@@ -14,12 +14,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function OurNewsSection() {
   return (
-    <Container
-      id="ourServiceSection"
-      maxW="container.lg"
-      paddingY="4rem"
-      minH="100vh"
-    >
+    <Container id="ourServiceSection" maxW="container.lg" paddingY="4rem">
       <Text
         fontWeight="normal"
         color="teal.300"
@@ -38,9 +33,8 @@ export default function OurNewsSection() {
         justifyContent="space-between"
         color="whiteAlpha.700"
         flexWrap="wrap"
-        mb="8rem"
       >
-        <Box width={{ base: "100%", md: "32%" }} height="350px">
+        <Box width={{ base: "100%", md: "32%" }} minH="350px">
           <Image src="../images/safty-1.jpeg" width="100%" borderRadius="2xl" />
 
           <Text color="whiteAlpha.500" pt="4">
@@ -72,7 +66,7 @@ export default function OurNewsSection() {
             </Flex>
           </Link>
         </Box>
-        <Box width={{ base: "100%", md: "32%" }} mb="8" height="350px">
+        <Box width={{ base: "100%", md: "32%" }} mb="8" minH="350px">
           <Image src="../images/safty-3.jpeg" width="100%" borderRadius="2xl" />
 
           <Text color="whiteAlpha.500" pt="4">
@@ -105,7 +99,7 @@ export default function OurNewsSection() {
             </Flex>
           </Link>
         </Box>
-        <Box width={{ base: "100%", md: "32%" }} mb="8" height="350px">
+        <Box width={{ base: "100%", md: "32%" }} mb="8" minH="350px">
           <Image src="../images/trial-2.jpg" width="100%" borderRadius="2xl" />
 
           <Text color="whiteAlpha.500" pt="4">

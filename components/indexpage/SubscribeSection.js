@@ -4,10 +4,9 @@ import { Center, Container, Heading, Text } from "@chakra-ui/layout";
 
 export default function SubscribeSection() {
   return (
-    <Container maxW="container.xl" minH="70vh" bg="#001A38" py="4rem">
+    <Container maxW="container.xl" bg="#001A38" py="4rem">
       <Container
         borderRadius="2xl"
-        py="4rem"
         maxW="container.md"
         textAlign="center"
         bgGradient="linear(to-b,#001A38, #00152e, #001A38)"
@@ -22,7 +21,7 @@ export default function SubscribeSection() {
           laboriosam consequatur.
         </Text>
         <Center>
-          <InputGroup width="70%">
+          <InputGroup>
             <Input
               placeholder="Your email address"
               size="lg"
@@ -30,7 +29,7 @@ export default function SubscribeSection() {
               bg="white"
               color="blackAlpha.700"
             />
-            <InputRightElement height="100%" width="27%">
+            <InputRightElement height="100%" width="10rem">
               <Button bg="teal.400" padding="1.5rem">
                 Subscribe
               </Button>

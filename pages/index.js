@@ -159,6 +159,7 @@ export default function Home() {
           paddingY="5rem"
           className="bg_global"
           px="1rem"
+          width="100%"
         >
           <Flex
             borderRadius="5px"
@@ -233,7 +234,6 @@ export default function Home() {
       </main>
 
       <footer>
-        {" "}
         <FooterSection />
       </footer>
     </div>

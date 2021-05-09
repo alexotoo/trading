@@ -13,16 +13,20 @@ export default function FooterSection() {
     <Container
       maxW="container.lg"
       textAlign="center"
-      minH="50vh"
       bg=" #00152e"
       color="white"
     >
-      <Flex justifyContent="space-between" py="2rem">
-        <HStack>
+      <Flex
+        justifyContent="space-between"
+        py="2rem"
+        direction={{ base: "column", md: "row" }}
+        alignItems="center"
+      >
+        <Flex alignItems="center" direction={{ base: "column", md: "row" }}>
           <GiCrestedHelmet fontSize="3.5rem" color="teal" />
-          <Text fontSize="2.5rem">Cryptotoo</Text>
-        </HStack>
-        <HStack>
+          <Text fontSize={{ base: "1rem", md: "2rem" }}>Cryptotoo</Text>
+        </Flex>
+        <Flex py="4">
           <Link
             px="10px"
             _hover={{ color: "teal.400", textDecoration: "none !important" }}
@@ -48,8 +52,8 @@ export default function FooterSection() {
             {" "}
             contact Us
           </Link>
-        </HStack>
-        <HStack>
+        </Flex>
+        <Flex>
           <Link
             transition="ease 0.3s"
             _hover={{ color: "teal.400", transform: "scale(1.25)" }}
@@ -74,7 +78,7 @@ export default function FooterSection() {
           >
             <AiFillGithub fontSize="2rem" />
           </Link>
-        </HStack>
+        </Flex>
       </Flex>
 
       <Flex
@@ -84,14 +88,10 @@ export default function FooterSection() {
         py="3rem"
         color="whiteAlpha.600"
       >
-        <HStack>
-          <Text>Privacy & Policy</Text>
-          <Text>Our terms and Conditions </Text>
-        </HStack>
-        <HStack>
-          <Text>Developed by AlexOoo</Text>
-          <Text> right reserved {today.getFullYear()}</Text>
-        </HStack>
+        <Text>Privacy & Policy</Text>
+
+        <Text>Developed by AlexOoo</Text>
+        <Text> right reserved {today.getFullYear()}</Text>
       </Flex>
     </Container>
   );
