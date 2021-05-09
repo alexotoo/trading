@@ -15,6 +15,7 @@ export default function FooterSection() {
       textAlign="center"
       bg=" #00152e"
       color="white"
+      overflow="hidden"
     >
       <Flex
         justifyContent="space-between"

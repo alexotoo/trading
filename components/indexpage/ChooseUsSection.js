@@ -16,6 +16,7 @@ export default function ChooseUsSection() {
       py="6"
       direction={{ base: "column", lg: "row" }}
       minH="50vh"
+      overflow="hidden"
     >
       <Image
         src="../images/work.jpg"
