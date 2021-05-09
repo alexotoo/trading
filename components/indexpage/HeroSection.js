@@ -37,6 +37,7 @@ export default function HeroSection() {
           paddingX="1rem"
           fontSize={{ base: "1.25rem", md: "2.25rem" }}
           letterSpacing="wide"
+          paddingTop={{ base: "2rem" }}
         >
           Guaranteed
           <Badge bg="none" fontSize="inherit" marginX="1" color="teal.300">
@@ -51,7 +52,7 @@ export default function HeroSection() {
           </Badge>{" "}
         </Heading>
 
-        <Text fontWeight="normal" paddingX="4" pt="6" color="whiteAlpha.700">
+        <Text fontWeight="normal" paddingX="4" pt="4" color="whiteAlpha.700">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
           error molestias voluptate iste excepturi aut consectetur ab fugiat
           suscipit qui labore voluptates vel enim odio, atque maxime animi
